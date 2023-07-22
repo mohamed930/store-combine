@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  loginViewController.swift
 //  store
 //
 //  Created by Mohamed Ali on 22/07/2023.
@@ -7,13 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class loginViewController: UIViewController {
+    
+    var loginviewmodel: loginViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
     }
 
-
 }
-
