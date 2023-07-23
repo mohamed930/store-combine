@@ -33,6 +33,7 @@ internal enum images {
   internal static let arrowLongRight = ImageAsset(name: "arrow-long-right")
   internal static let eye = ImageAsset(name: "eye")
   internal static let lock = ImageAsset(name: "lock")
+  internal static let logIn = ImageAsset(name: "log-in")
   internal static let onBoardingScreen = ImageAsset(name: "onBoardingScreen")
   internal static let 💚IconL = ImageAsset(name: "💚 Icon - L")
   internal static let 💚IconR = ImageAsset(name: "💚 Icon - R")

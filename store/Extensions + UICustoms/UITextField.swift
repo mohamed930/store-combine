@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 extension UITextField {
     
@@ -27,5 +28,12 @@ extension UITextField {
         
         self.attributedPlaceholder = NSAttributedString(string: PlaceHolder,
                 attributes: [NSAttributedString.Key.foregroundColor: Color])
+    }
+    
+    func textPublisher() -> AnyPublisher<String, Never> {
+        NotificationCenter.default
+            .publisher(for: UITextField.textDidChangeNotification, object: self)
+            .map { ($0.object as? UITextField)?.text  ?? "" }
+            .eraseToAnyPublisher()
     }
 }

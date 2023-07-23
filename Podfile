@@ -8,7 +8,7 @@ target 'store' do
 
   # Pods for store
   
-  pod 'SwiftGen'
+  pod 'SwiftGen', '~> 6.0'
   pod 'IQKeyboardManagerSwift'
   pod 'Alamofire'
   pod 'ProgressHUD'

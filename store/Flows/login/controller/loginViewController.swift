@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class loginViewController: UIViewController {
     
@@ -16,11 +17,14 @@ class loginViewController: UIViewController {
     let padding: CGFloat = 40
     let color = images.blackColor.color
     var flag = true
+    var cancallable = Set<AnyCancellable>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureUI()
+        bindToTextField()
+        subscribeToIsLoadingBehvaiour()
     }
     
     func configureUI() {
@@ -31,6 +35,27 @@ class loginViewController: UIViewController {
     @IBAction func showPassword(_ sender: Any) {
         flag = !flag
         passwordTextField.isSecureTextEntry = flag ? true : false
+    }
+    
+    
+    // MARK: - bind to CombineVariable.
+    func bindToTextField() {
+        loginviewmodel.startRequest()
+    }
+    
+    // MARK: - subscribe to isLoading or not.
+    func subscribeToIsLoadingBehvaiour() {
+        loginviewmodel.isloadingBehaviour.sink { [weak self] isloading in
+            guard let self = self else { return }
+            
+            if isloading {
+                showLoading()
+            }
+            else {
+                dismissLoading()
+            }
+            
+        }.store(in: &cancallable)
     }
 
 }

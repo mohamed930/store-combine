@@ -12,6 +12,8 @@ import Foundation
 internal enum myStrings {
   /// كلمة السر
   internal static let password = myStrings.tr("Localizable", "password", fallback: "كلمة السر")
+  /// من فضلك انتظر قليلاً
+  internal static let pleaseWait = myStrings.tr("Localizable", "pleaseWait", fallback: "من فضلك انتظر قليلاً")
   /// Localizable.strings
   ///   store
   /// 
