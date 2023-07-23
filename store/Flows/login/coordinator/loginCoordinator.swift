@@ -15,7 +15,7 @@ class loginCoordinator: BaseCoordinator {
     }
     
     override func start() {
-        let viewController = loginViewController(nibName: "loginViewController", bundle: nil)
+        guard let viewController: loginViewController = declareViewController(screen: .loginViewController) else { return }
         let viewmodel = loginViewModel()
         viewmodel.coordinator = self
         viewController.loginviewmodel = viewmodel

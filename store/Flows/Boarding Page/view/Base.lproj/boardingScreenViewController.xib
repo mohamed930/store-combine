@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Bold.ttf">
+            <string>DMSans-Bold</string>
+        </array>
+        <array key="DMSans-Medium.ttf">
+            <string>DMSans-Medium</string>
+        </array>
+        <array key="DMSans-Regular.ttf">
+            <string>DMSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="boardingScreenViewController" customModule="store" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onBoardingScreen" translatesAutoresizingMaskIntoConstraints="NO" id="vkB-eN-AAl">
+                    <rect key="frame" x="0.0" y="64" width="414" height="464"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to STStore !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u14-Cc-DuM">
+                    <rect key="frame" x="81.5" y="600" width="251.5" height="31.5"/>
+                    <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUo-4B-hRj">
+                    <rect key="frame" x="35" y="732" width="344" height="44"/>
+                    <color key="backgroundColor" name="yelloColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="aqg-v0-Wzx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="GET STARTED">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="goToLoginScreen:" destination="-1" eventType="touchUpInside" id="SGe-KC-eRh"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-long-right" translatesAutoresizingMaskIntoConstraints="NO" id="eXt-fe-EAZ">
+                    <rect key="frame" x="339" y="742" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="DeV-zV-8Ic"/>
+                        <constraint firstAttribute="height" constant="24" id="a6u-0k-p5Y"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With long experience in the audio industry, we create the best quality products" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0G-vI-csE">
+                    <rect key="frame" x="45" y="647.5" width="324" height="36.5"/>
+                    <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="14"/>
+                    <color key="textColor" name="sub text"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="eXt-fe-EAZ" firstAttribute="right" secondItem="PUo-4B-hRj" secondAttribute="right" constant="-16" id="26S-ap-Lif"/>
+                <constraint firstItem="vkB-eN-AAl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3bc-4x-DXy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PUo-4B-hRj" secondAttribute="trailing" constant="35" id="4kr-jM-IQY"/>
+                <constraint firstItem="vkB-eN-AAl" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.57:1" id="59E-8n-imc"/>
+                <constraint firstItem="R0G-vI-csE" firstAttribute="top" secondItem="u14-Cc-DuM" secondAttribute="bottom" constant="16" id="KU5-YI-hXi"/>
+                <constraint firstItem="PUo-4B-hRj" firstAttribute="top" secondItem="R0G-vI-csE" secondAttribute="bottom" constant="48" id="VJ0-C7-P8C"/>
+                <constraint firstItem="u14-Cc-DuM" firstAttribute="top" secondItem="vkB-eN-AAl" secondAttribute="bottom" constant="72" id="ZeO-2w-CdJ"/>
+                <constraint firstItem="vkB-eN-AAl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="chg-js-MbB"/>
+                <constraint firstItem="R0G-vI-csE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="ecP-bY-vEX"/>
+                <constraint firstItem="PUo-4B-hRj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="gDa-vr-Scz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vkB-eN-AAl" secondAttribute="trailing" id="kLD-ce-lMd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="R0G-vI-csE" secondAttribute="trailing" constant="45" id="qEp-kI-VHH"/>
+                <constraint firstItem="u14-Cc-DuM" firstAttribute="centerX" secondItem="vkB-eN-AAl" secondAttribute="centerX" id="udR-vd-rgP"/>
+                <constraint firstItem="eXt-fe-EAZ" firstAttribute="centerY" secondItem="PUo-4B-hRj" secondAttribute="centerY" id="uhv-c5-7As"/>
+            </constraints>
+            <point key="canvasLocation" x="-8.6956521739130448" y="-148.66071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow-long-right" width="48" height="48"/>
+        <image name="onBoardingScreen" width="750" height="844"/>
+        <namedColor name="sub text">
+            <color red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yelloColor">
+            <color red="0.77647058823529413" green="0.6705882352941176" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -5,7 +5,7 @@
 //  Created by Mohamed Ali on 02/05/2023.
 //
 
-import Foundation
+import UIKit
 
 class BaseCoordinator: Coordinator {
     
@@ -19,5 +19,10 @@ class BaseCoordinator: Coordinator {
     
     func removeFromParant() {
         parantCoordinator?.remove(coordinator: self)
+    }
+    
+    
+    func declareViewController<T: UIViewController>(screen: screens) -> T? {
+        return T(nibName: screen.rawValue, bundle: nil)
     }
 }

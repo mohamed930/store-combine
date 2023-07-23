@@ -12,15 +12,97 @@
 		D302068C2A6C2932004D3685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D302068B2A6C2932004D3685 /* Assets.xcassets */; };
 		D302068F2A6C2932004D3685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D302068D2A6C2932004D3685 /* LaunchScreen.storyboard */; };
 		D302069E2A6C29D4004D3685 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D302069C2A6C29D4004D3685 /* loginViewController.swift */; };
-		D302069F2A6C29D4004D3685 /* loginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D302069D2A6C29D4004D3685 /* loginViewController.xib */; };
 		D30206A52A6C2A22004D3685 /* loginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30206A42A6C2A22004D3685 /* loginViewModel.swift */; };
 		D30206AA2A6C2A61004D3685 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30206A72A6C2A61004D3685 /* AppCoordinator.swift */; };
 		D30206AB2A6C2A61004D3685 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30206A82A6C2A61004D3685 /* BaseCoordinator.swift */; };
 		D30206AC2A6C2A61004D3685 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30206A92A6C2A61004D3685 /* Coordinator.swift */; };
 		D30206AE2A6C2A83004D3685 /* loginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30206AD2A6C2A83004D3685 /* loginCoordinator.swift */; };
 		D30206B22A6C2BDF004D3685 /* boardingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30206B02A6C2BDF004D3685 /* boardingScreenViewController.swift */; };
-		D30206B32A6C2BDF004D3685 /* boardingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D30206B12A6C2BDF004D3685 /* boardingScreenViewController.xib */; };
 		D30206B82A6C2C0A004D3685 /* boardingScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30206B72A6C2C0A004D3685 /* boardingScreenCoordinator.swift */; };
+		D31100942A6D271D0055AFE9 /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31100932A6D271D0055AFE9 /* Utilites.swift */; };
+		D31100952A6D2B250055AFE9 /* boardingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31100972A6D2B250055AFE9 /* boardingScreenViewController.xib */; };
+		D31100EA2A6D2CA60055AFE9 /* DMSans-Italic-VariableFont_opsz,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D311009D2A6D2CA60055AFE9 /* DMSans-Italic-VariableFont_opsz,wght.ttf */; };
+		D31100EB2A6D2CA60055AFE9 /* DMSans_18pt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D311009F2A6D2CA60055AFE9 /* DMSans_18pt-ExtraLight.ttf */; };
+		D31100EC2A6D2CA60055AFE9 /* DMSans_18pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100A02A6D2CA60055AFE9 /* DMSans_18pt-ThinItalic.ttf */; };
+		D31100ED2A6D2CA60055AFE9 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100A12A6D2CA60055AFE9 /* DMSans-Regular.ttf */; };
+		D31100EE2A6D2CA60055AFE9 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100A22A6D2CA60055AFE9 /* DMSans-Medium.ttf */; };
+		D31100EF2A6D2CA60055AFE9 /* DMSans_18pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100A32A6D2CA60055AFE9 /* DMSans_18pt-ExtraBold.ttf */; };
+		D31100F02A6D2CA60055AFE9 /* DMSans_18pt-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100A42A6D2CA60055AFE9 /* DMSans_18pt-BoldItalic.ttf */; };
+		D31100F12A6D2CA60055AFE9 /* DMSans_36pt-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100A52A6D2CA60055AFE9 /* DMSans_36pt-SemiBoldItalic.ttf */; };
+		D31100F22A6D2CA60055AFE9 /* DMSans_24pt-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100A62A6D2CA60055AFE9 /* DMSans_24pt-MediumItalic.ttf */; };
+		D31100F32A6D2CA60055AFE9 /* DMSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100A72A6D2CA60055AFE9 /* DMSans-SemiBoldItalic.ttf */; };
+		D31100F42A6D2CA60055AFE9 /* DMSans_36pt-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100A82A6D2CA60055AFE9 /* DMSans_36pt-ExtraLightItalic.ttf */; };
+		D31100F52A6D2CA60055AFE9 /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100A92A6D2CA60055AFE9 /* DMSans-Bold.ttf */; };
+		D31100F62A6D2CA60055AFE9 /* DMSans_18pt-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100AA2A6D2CA60055AFE9 /* DMSans_18pt-ExtraBoldItalic.ttf */; };
+		D31100F72A6D2CA60055AFE9 /* DMSans_36pt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100AB2A6D2CA60055AFE9 /* DMSans_36pt-ExtraLight.ttf */; };
+		D31100F82A6D2CA60055AFE9 /* DMSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100AC2A6D2CA60055AFE9 /* DMSans-Thin.ttf */; };
+		D31100F92A6D2CA60055AFE9 /* DMSans_18pt-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100AD2A6D2CA60055AFE9 /* DMSans_18pt-LightItalic.ttf */; };
+		D31100FA2A6D2CA60055AFE9 /* DMSans_24pt-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100AE2A6D2CA60055AFE9 /* DMSans_24pt-SemiBoldItalic.ttf */; };
+		D31100FB2A6D2CA60055AFE9 /* DMSans_36pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100AF2A6D2CA60055AFE9 /* DMSans_36pt-ThinItalic.ttf */; };
+		D31100FC2A6D2CA60055AFE9 /* DMSans_18pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100B02A6D2CA60055AFE9 /* DMSans_18pt-Medium.ttf */; };
+		D31100FD2A6D2CA60055AFE9 /* DMSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100B12A6D2CA60055AFE9 /* DMSans-Light.ttf */; };
+		D31100FE2A6D2CA60055AFE9 /* DMSans_36pt-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100B22A6D2CA60055AFE9 /* DMSans_36pt-BoldItalic.ttf */; };
+		D31100FF2A6D2CA60055AFE9 /* DMSans_24pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100B32A6D2CA60055AFE9 /* DMSans_24pt-Regular.ttf */; };
+		D31101002A6D2CA60055AFE9 /* DMSans_36pt-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100B42A6D2CA60055AFE9 /* DMSans_36pt-BlackItalic.ttf */; };
+		D31101012A6D2CA60055AFE9 /* DMSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100B52A6D2CA60055AFE9 /* DMSans-ExtraLightItalic.ttf */; };
+		D31101022A6D2CA60055AFE9 /* DMSans_36pt-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100B62A6D2CA60055AFE9 /* DMSans_36pt-ExtraBoldItalic.ttf */; };
+		D31101032A6D2CA60055AFE9 /* DMSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100B72A6D2CA60055AFE9 /* DMSans-ThinItalic.ttf */; };
+		D31101042A6D2CA60055AFE9 /* DMSans_36pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100B82A6D2CA60055AFE9 /* DMSans_36pt-Medium.ttf */; };
+		D31101052A6D2CA60055AFE9 /* DMSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100B92A6D2CA60055AFE9 /* DMSans-ExtraLight.ttf */; };
+		D31101062A6D2CA60055AFE9 /* DMSans_24pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100BA2A6D2CA60055AFE9 /* DMSans_24pt-Medium.ttf */; };
+		D31101072A6D2CA60055AFE9 /* DMSans_18pt-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100BB2A6D2CA60055AFE9 /* DMSans_18pt-BlackItalic.ttf */; };
+		D31101082A6D2CA60055AFE9 /* DMSans_36pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100BC2A6D2CA60055AFE9 /* DMSans_36pt-Thin.ttf */; };
+		D31101092A6D2CA60055AFE9 /* DMSans_18pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100BD2A6D2CA60055AFE9 /* DMSans_18pt-Bold.ttf */; };
+		D311010A2A6D2CA60055AFE9 /* DMSans_36pt-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100BE2A6D2CA60055AFE9 /* DMSans_36pt-LightItalic.ttf */; };
+		D311010B2A6D2CA60055AFE9 /* DMSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100BF2A6D2CA60055AFE9 /* DMSans-BoldItalic.ttf */; };
+		D311010C2A6D2CA60055AFE9 /* DMSans_36pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100C02A6D2CA60055AFE9 /* DMSans_36pt-SemiBold.ttf */; };
+		D311010D2A6D2CA60055AFE9 /* DMSans_18pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100C12A6D2CA60055AFE9 /* DMSans_18pt-Thin.ttf */; };
+		D311010E2A6D2CA60055AFE9 /* DMSans_36pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100C22A6D2CA60055AFE9 /* DMSans_36pt-Bold.ttf */; };
+		D311010F2A6D2CA60055AFE9 /* DMSans_24pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100C32A6D2CA60055AFE9 /* DMSans_24pt-ExtraBold.ttf */; };
+		D31101102A6D2CA60055AFE9 /* DMSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100C42A6D2CA60055AFE9 /* DMSans-SemiBold.ttf */; };
+		D31101112A6D2CA60055AFE9 /* DMSans_24pt-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100C52A6D2CA60055AFE9 /* DMSans_24pt-ExtraBoldItalic.ttf */; };
+		D31101122A6D2CA60055AFE9 /* DMSans_18pt-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100C62A6D2CA60055AFE9 /* DMSans_18pt-SemiBoldItalic.ttf */; };
+		D31101132A6D2CA60055AFE9 /* DMSans_24pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100C72A6D2CA60055AFE9 /* DMSans_24pt-SemiBold.ttf */; };
+		D31101142A6D2CA60055AFE9 /* DMSans_36pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100C82A6D2CA60055AFE9 /* DMSans_36pt-Light.ttf */; };
+		D31101152A6D2CA60055AFE9 /* DMSans_18pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100C92A6D2CA60055AFE9 /* DMSans_18pt-Light.ttf */; };
+		D31101162A6D2CA60055AFE9 /* DMSans_24pt-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100CA2A6D2CA60055AFE9 /* DMSans_24pt-Black.ttf */; };
+		D31101172A6D2CA60055AFE9 /* DMSans_18pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100CB2A6D2CA60055AFE9 /* DMSans_18pt-SemiBold.ttf */; };
+		D31101182A6D2CA60055AFE9 /* DMSans_24pt-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100CC2A6D2CA60055AFE9 /* DMSans_24pt-BoldItalic.ttf */; };
+		D31101192A6D2CA60055AFE9 /* DMSans_24pt-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100CD2A6D2CA60055AFE9 /* DMSans_24pt-BlackItalic.ttf */; };
+		D311011A2A6D2CA60055AFE9 /* DMSans_36pt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100CE2A6D2CA60055AFE9 /* DMSans_36pt-Italic.ttf */; };
+		D311011B2A6D2CA60055AFE9 /* DMSans_36pt-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100CF2A6D2CA60055AFE9 /* DMSans_36pt-Black.ttf */; };
+		D311011C2A6D2CA60055AFE9 /* DMSans_24pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100D02A6D2CA60055AFE9 /* DMSans_24pt-Bold.ttf */; };
+		D311011D2A6D2CA60055AFE9 /* DMSans_24pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100D12A6D2CA60055AFE9 /* DMSans_24pt-Light.ttf */; };
+		D311011E2A6D2CA60055AFE9 /* DMSans_24pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100D22A6D2CA60055AFE9 /* DMSans_24pt-ThinItalic.ttf */; };
+		D311011F2A6D2CA60055AFE9 /* DMSans_18pt-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100D32A6D2CA60055AFE9 /* DMSans_18pt-Black.ttf */; };
+		D31101202A6D2CA60055AFE9 /* DMSans_24pt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100D42A6D2CA60055AFE9 /* DMSans_24pt-Italic.ttf */; };
+		D31101212A6D2CA60055AFE9 /* DMSans_24pt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100D52A6D2CA60055AFE9 /* DMSans_24pt-ExtraLight.ttf */; };
+		D31101222A6D2CA60055AFE9 /* DMSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100D62A6D2CA60055AFE9 /* DMSans-ExtraBold.ttf */; };
+		D31101232A6D2CA60055AFE9 /* DMSans_24pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100D72A6D2CA60055AFE9 /* DMSans_24pt-Thin.ttf */; };
+		D31101242A6D2CA60055AFE9 /* DMSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100D82A6D2CA60055AFE9 /* DMSans-BlackItalic.ttf */; };
+		D31101252A6D2CA60055AFE9 /* DMSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100D92A6D2CA60055AFE9 /* DMSans-MediumItalic.ttf */; };
+		D31101262A6D2CA60055AFE9 /* DMSans_36pt-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100DA2A6D2CA60055AFE9 /* DMSans_36pt-MediumItalic.ttf */; };
+		D31101272A6D2CA60055AFE9 /* DMSans_36pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100DB2A6D2CA60055AFE9 /* DMSans_36pt-Regular.ttf */; };
+		D31101282A6D2CA60055AFE9 /* DMSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100DC2A6D2CA60055AFE9 /* DMSans-LightItalic.ttf */; };
+		D31101292A6D2CA60055AFE9 /* DMSans_18pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100DD2A6D2CA60055AFE9 /* DMSans_18pt-Regular.ttf */; };
+		D311012A2A6D2CA60055AFE9 /* DMSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100DE2A6D2CA60055AFE9 /* DMSans-Black.ttf */; };
+		D311012B2A6D2CA60055AFE9 /* DMSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100DF2A6D2CA60055AFE9 /* DMSans-Italic.ttf */; };
+		D311012C2A6D2CA60055AFE9 /* DMSans_18pt-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100E02A6D2CA60055AFE9 /* DMSans_18pt-MediumItalic.ttf */; };
+		D311012D2A6D2CA60055AFE9 /* DMSans_36pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100E12A6D2CA60055AFE9 /* DMSans_36pt-ExtraBold.ttf */; };
+		D311012E2A6D2CA60055AFE9 /* DMSans_24pt-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100E22A6D2CA60055AFE9 /* DMSans_24pt-ExtraLightItalic.ttf */; };
+		D311012F2A6D2CA60055AFE9 /* DMSans_18pt-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100E32A6D2CA60055AFE9 /* DMSans_18pt-ExtraLightItalic.ttf */; };
+		D31101302A6D2CA60055AFE9 /* DMSans_24pt-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100E42A6D2CA60055AFE9 /* DMSans_24pt-LightItalic.ttf */; };
+		D31101312A6D2CA60055AFE9 /* DMSans_18pt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100E52A6D2CA60055AFE9 /* DMSans_18pt-Italic.ttf */; };
+		D31101322A6D2CA60055AFE9 /* DMSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100E62A6D2CA60055AFE9 /* DMSans-ExtraBoldItalic.ttf */; };
+		D31101332A6D2CA60055AFE9 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = D31100E72A6D2CA60055AFE9 /* OFL.txt */; };
+		D31101342A6D2CA60055AFE9 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D31100E82A6D2CA60055AFE9 /* README.txt */; };
+		D31101352A6D2CA60055AFE9 /* DMSans-VariableFont_opsz,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31100E92A6D2CA60055AFE9 /* DMSans-VariableFont_opsz,wght.ttf */; };
+		D31101372A6D31830055AFE9 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31101362A6D31830055AFE9 /* UITextField.swift */; };
+		D31101382A6D37BA0055AFE9 /* loginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D311013A2A6D37BA0055AFE9 /* loginViewController.xib */; };
+		D311FF9E2A6D10F30055AFE9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D311FFA02A6D10F30055AFE9 /* Localizable.strings */; };
+		D311FFA72A6D16F50055AFE9 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311FFA62A6D16F50055AFE9 /* Strings+Generated.swift */; };
+		D311FFAA2A6D17650055AFE9 /* screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311FFA92A6D17650055AFE9 /* screens.swift */; };
+		D311FFAF2A6D1D110055AFE9 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311FFAE2A6D1D110055AFE9 /* XCAssets+Generated.swift */; };
 		E3C3652F4E94E0C3BD6C8E25 /* Pods_store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD482E126BE89391E124FA4 /* Pods_store.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,15 +116,103 @@
 		D302068E2A6C2932004D3685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D30206902A6C2932004D3685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D302069C2A6C29D4004D3685 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
-		D302069D2A6C29D4004D3685 /* loginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loginViewController.xib; sourceTree = "<group>"; };
 		D30206A42A6C2A22004D3685 /* loginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewModel.swift; sourceTree = "<group>"; };
 		D30206A72A6C2A61004D3685 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		D30206A82A6C2A61004D3685 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		D30206A92A6C2A61004D3685 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		D30206AD2A6C2A83004D3685 /* loginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginCoordinator.swift; sourceTree = "<group>"; };
 		D30206B02A6C2BDF004D3685 /* boardingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardingScreenViewController.swift; sourceTree = "<group>"; };
-		D30206B12A6C2BDF004D3685 /* boardingScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = boardingScreenViewController.xib; sourceTree = "<group>"; };
 		D30206B72A6C2C0A004D3685 /* boardingScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardingScreenCoordinator.swift; sourceTree = "<group>"; };
+		D31100932A6D271D0055AFE9 /* Utilites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
+		D31100962A6D2B250055AFE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/boardingScreenViewController.xib; sourceTree = "<group>"; };
+		D31100992A6D2B2A0055AFE9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/boardingScreenViewController.strings; sourceTree = "<group>"; };
+		D311009B2A6D2B2B0055AFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/boardingScreenViewController.strings; sourceTree = "<group>"; };
+		D311009D2A6D2CA60055AFE9 /* DMSans-Italic-VariableFont_opsz,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Italic-VariableFont_opsz,wght.ttf"; sourceTree = "<group>"; };
+		D311009F2A6D2CA60055AFE9 /* DMSans_18pt-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D31100A02A6D2CA60055AFE9 /* DMSans_18pt-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-ThinItalic.ttf"; sourceTree = "<group>"; };
+		D31100A12A6D2CA60055AFE9 /* DMSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Regular.ttf"; sourceTree = "<group>"; };
+		D31100A22A6D2CA60055AFE9 /* DMSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Medium.ttf"; sourceTree = "<group>"; };
+		D31100A32A6D2CA60055AFE9 /* DMSans_18pt-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D31100A42A6D2CA60055AFE9 /* DMSans_18pt-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D31100A52A6D2CA60055AFE9 /* DMSans_36pt-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		D31100A62A6D2CA60055AFE9 /* DMSans_24pt-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-MediumItalic.ttf"; sourceTree = "<group>"; };
+		D31100A72A6D2CA60055AFE9 /* DMSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		D31100A82A6D2CA60055AFE9 /* DMSans_36pt-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		D31100A92A6D2CA60055AFE9 /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Bold.ttf"; sourceTree = "<group>"; };
+		D31100AA2A6D2CA60055AFE9 /* DMSans_18pt-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		D31100AB2A6D2CA60055AFE9 /* DMSans_36pt-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D31100AC2A6D2CA60055AFE9 /* DMSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Thin.ttf"; sourceTree = "<group>"; };
+		D31100AD2A6D2CA60055AFE9 /* DMSans_18pt-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-LightItalic.ttf"; sourceTree = "<group>"; };
+		D31100AE2A6D2CA60055AFE9 /* DMSans_24pt-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		D31100AF2A6D2CA60055AFE9 /* DMSans_36pt-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-ThinItalic.ttf"; sourceTree = "<group>"; };
+		D31100B02A6D2CA60055AFE9 /* DMSans_18pt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-Medium.ttf"; sourceTree = "<group>"; };
+		D31100B12A6D2CA60055AFE9 /* DMSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Light.ttf"; sourceTree = "<group>"; };
+		D31100B22A6D2CA60055AFE9 /* DMSans_36pt-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D31100B32A6D2CA60055AFE9 /* DMSans_24pt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-Regular.ttf"; sourceTree = "<group>"; };
+		D31100B42A6D2CA60055AFE9 /* DMSans_36pt-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-BlackItalic.ttf"; sourceTree = "<group>"; };
+		D31100B52A6D2CA60055AFE9 /* DMSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		D31100B62A6D2CA60055AFE9 /* DMSans_36pt-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		D31100B72A6D2CA60055AFE9 /* DMSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		D31100B82A6D2CA60055AFE9 /* DMSans_36pt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-Medium.ttf"; sourceTree = "<group>"; };
+		D31100B92A6D2CA60055AFE9 /* DMSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D31100BA2A6D2CA60055AFE9 /* DMSans_24pt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-Medium.ttf"; sourceTree = "<group>"; };
+		D31100BB2A6D2CA60055AFE9 /* DMSans_18pt-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-BlackItalic.ttf"; sourceTree = "<group>"; };
+		D31100BC2A6D2CA60055AFE9 /* DMSans_36pt-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-Thin.ttf"; sourceTree = "<group>"; };
+		D31100BD2A6D2CA60055AFE9 /* DMSans_18pt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-Bold.ttf"; sourceTree = "<group>"; };
+		D31100BE2A6D2CA60055AFE9 /* DMSans_36pt-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-LightItalic.ttf"; sourceTree = "<group>"; };
+		D31100BF2A6D2CA60055AFE9 /* DMSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D31100C02A6D2CA60055AFE9 /* DMSans_36pt-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-SemiBold.ttf"; sourceTree = "<group>"; };
+		D31100C12A6D2CA60055AFE9 /* DMSans_18pt-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-Thin.ttf"; sourceTree = "<group>"; };
+		D31100C22A6D2CA60055AFE9 /* DMSans_36pt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-Bold.ttf"; sourceTree = "<group>"; };
+		D31100C32A6D2CA60055AFE9 /* DMSans_24pt-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D31100C42A6D2CA60055AFE9 /* DMSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		D31100C52A6D2CA60055AFE9 /* DMSans_24pt-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		D31100C62A6D2CA60055AFE9 /* DMSans_18pt-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		D31100C72A6D2CA60055AFE9 /* DMSans_24pt-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-SemiBold.ttf"; sourceTree = "<group>"; };
+		D31100C82A6D2CA60055AFE9 /* DMSans_36pt-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-Light.ttf"; sourceTree = "<group>"; };
+		D31100C92A6D2CA60055AFE9 /* DMSans_18pt-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-Light.ttf"; sourceTree = "<group>"; };
+		D31100CA2A6D2CA60055AFE9 /* DMSans_24pt-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-Black.ttf"; sourceTree = "<group>"; };
+		D31100CB2A6D2CA60055AFE9 /* DMSans_18pt-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-SemiBold.ttf"; sourceTree = "<group>"; };
+		D31100CC2A6D2CA60055AFE9 /* DMSans_24pt-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D31100CD2A6D2CA60055AFE9 /* DMSans_24pt-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-BlackItalic.ttf"; sourceTree = "<group>"; };
+		D31100CE2A6D2CA60055AFE9 /* DMSans_36pt-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-Italic.ttf"; sourceTree = "<group>"; };
+		D31100CF2A6D2CA60055AFE9 /* DMSans_36pt-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-Black.ttf"; sourceTree = "<group>"; };
+		D31100D02A6D2CA60055AFE9 /* DMSans_24pt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-Bold.ttf"; sourceTree = "<group>"; };
+		D31100D12A6D2CA60055AFE9 /* DMSans_24pt-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-Light.ttf"; sourceTree = "<group>"; };
+		D31100D22A6D2CA60055AFE9 /* DMSans_24pt-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-ThinItalic.ttf"; sourceTree = "<group>"; };
+		D31100D32A6D2CA60055AFE9 /* DMSans_18pt-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-Black.ttf"; sourceTree = "<group>"; };
+		D31100D42A6D2CA60055AFE9 /* DMSans_24pt-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-Italic.ttf"; sourceTree = "<group>"; };
+		D31100D52A6D2CA60055AFE9 /* DMSans_24pt-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D31100D62A6D2CA60055AFE9 /* DMSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D31100D72A6D2CA60055AFE9 /* DMSans_24pt-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-Thin.ttf"; sourceTree = "<group>"; };
+		D31100D82A6D2CA60055AFE9 /* DMSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		D31100D92A6D2CA60055AFE9 /* DMSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		D31100DA2A6D2CA60055AFE9 /* DMSans_36pt-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-MediumItalic.ttf"; sourceTree = "<group>"; };
+		D31100DB2A6D2CA60055AFE9 /* DMSans_36pt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-Regular.ttf"; sourceTree = "<group>"; };
+		D31100DC2A6D2CA60055AFE9 /* DMSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		D31100DD2A6D2CA60055AFE9 /* DMSans_18pt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-Regular.ttf"; sourceTree = "<group>"; };
+		D31100DE2A6D2CA60055AFE9 /* DMSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Black.ttf"; sourceTree = "<group>"; };
+		D31100DF2A6D2CA60055AFE9 /* DMSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Italic.ttf"; sourceTree = "<group>"; };
+		D31100E02A6D2CA60055AFE9 /* DMSans_18pt-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-MediumItalic.ttf"; sourceTree = "<group>"; };
+		D31100E12A6D2CA60055AFE9 /* DMSans_36pt-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_36pt-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D31100E22A6D2CA60055AFE9 /* DMSans_24pt-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		D31100E32A6D2CA60055AFE9 /* DMSans_18pt-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		D31100E42A6D2CA60055AFE9 /* DMSans_24pt-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-LightItalic.ttf"; sourceTree = "<group>"; };
+		D31100E52A6D2CA60055AFE9 /* DMSans_18pt-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-Italic.ttf"; sourceTree = "<group>"; };
+		D31100E62A6D2CA60055AFE9 /* DMSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		D31100E72A6D2CA60055AFE9 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		D31100E82A6D2CA60055AFE9 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D31100E92A6D2CA60055AFE9 /* DMSans-VariableFont_opsz,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-VariableFont_opsz,wght.ttf"; sourceTree = "<group>"; };
+		D31101362A6D31830055AFE9 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		D31101392A6D37BA0055AFE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/loginViewController.xib; sourceTree = "<group>"; };
+		D311013C2A6D37BF0055AFE9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/loginViewController.strings; sourceTree = "<group>"; };
+		D311013E2A6D37BF0055AFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/loginViewController.strings; sourceTree = "<group>"; };
+		D311FF9F2A6D10F30055AFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D311FFA22A6D110C0055AFE9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D311FFA32A6D11110055AFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D311FFA62A6D16F50055AFE9 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		D311FFA92A6D17650055AFE9 /* screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screens.swift; sourceTree = "<group>"; };
+		D311FFAE2A6D1D110055AFE9 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		FDCDE4FD6872AEB8C3E40109 /* Pods-store.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-store.debug.xcconfig"; path = "Target Support Files/Pods-store/Pods-store.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +262,8 @@
 				D30206A22A6C2A01004D3685 /* model */,
 				D30206992A6C297B004D3685 /* launchScreen */,
 				D30206972A6C295C004D3685 /* Flows */,
+				D311FFAB2A6D17920055AFE9 /* Extensions + UICustoms */,
+				D311FFA52A6D15880055AFE9 /* constanse */,
 				D30206982A6C2976004D3685 /* Assists */,
 			);
 			path = store;
@@ -118,6 +290,8 @@
 		D30206982A6C2976004D3685 /* Assists */ = {
 			isa = PBXGroup;
 			children = (
+				D311FFB02A6D25620055AFE9 /* font */,
+				D311FF9B2A6D10AA0055AFE9 /* localizable */,
 				D302068B2A6C2932004D3685 /* Assets.xcassets */,
 				D30206902A6C2932004D3685 /* Info.plist */,
 			);
@@ -146,7 +320,7 @@
 		D302069B2A6C29B8004D3685 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				D302069D2A6C29D4004D3685 /* loginViewController.xib */,
+				D311013A2A6D37BA0055AFE9 /* loginViewController.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -185,8 +359,8 @@
 		D30206A62A6C2A61004D3685 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				D30206A82A6C2A61004D3685 /* BaseCoordinator.swift */,
 				D30206A92A6C2A61004D3685 /* Coordinator.swift */,
+				D30206A82A6C2A61004D3685 /* BaseCoordinator.swift */,
 				D30206A72A6C2A61004D3685 /* AppCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -205,7 +379,7 @@
 		D30206B42A6C2BE1004D3685 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				D30206B12A6C2BDF004D3685 /* boardingScreenViewController.xib */,
+				D31100972A6D2B250055AFE9 /* boardingScreenViewController.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -226,13 +400,146 @@
 			path = coordinator;
 			sourceTree = "<group>";
 		};
+		D311009C2A6D2CA60055AFE9 /* DM_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				D311009D2A6D2CA60055AFE9 /* DMSans-Italic-VariableFont_opsz,wght.ttf */,
+				D311009E2A6D2CA60055AFE9 /* static */,
+				D31100E72A6D2CA60055AFE9 /* OFL.txt */,
+				D31100E82A6D2CA60055AFE9 /* README.txt */,
+				D31100E92A6D2CA60055AFE9 /* DMSans-VariableFont_opsz,wght.ttf */,
+			);
+			path = DM_Sans;
+			sourceTree = "<group>";
+		};
+		D311009E2A6D2CA60055AFE9 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				D311009F2A6D2CA60055AFE9 /* DMSans_18pt-ExtraLight.ttf */,
+				D31100A02A6D2CA60055AFE9 /* DMSans_18pt-ThinItalic.ttf */,
+				D31100A12A6D2CA60055AFE9 /* DMSans-Regular.ttf */,
+				D31100A22A6D2CA60055AFE9 /* DMSans-Medium.ttf */,
+				D31100A32A6D2CA60055AFE9 /* DMSans_18pt-ExtraBold.ttf */,
+				D31100A42A6D2CA60055AFE9 /* DMSans_18pt-BoldItalic.ttf */,
+				D31100A52A6D2CA60055AFE9 /* DMSans_36pt-SemiBoldItalic.ttf */,
+				D31100A62A6D2CA60055AFE9 /* DMSans_24pt-MediumItalic.ttf */,
+				D31100A72A6D2CA60055AFE9 /* DMSans-SemiBoldItalic.ttf */,
+				D31100A82A6D2CA60055AFE9 /* DMSans_36pt-ExtraLightItalic.ttf */,
+				D31100A92A6D2CA60055AFE9 /* DMSans-Bold.ttf */,
+				D31100AA2A6D2CA60055AFE9 /* DMSans_18pt-ExtraBoldItalic.ttf */,
+				D31100AB2A6D2CA60055AFE9 /* DMSans_36pt-ExtraLight.ttf */,
+				D31100AC2A6D2CA60055AFE9 /* DMSans-Thin.ttf */,
+				D31100AD2A6D2CA60055AFE9 /* DMSans_18pt-LightItalic.ttf */,
+				D31100AE2A6D2CA60055AFE9 /* DMSans_24pt-SemiBoldItalic.ttf */,
+				D31100AF2A6D2CA60055AFE9 /* DMSans_36pt-ThinItalic.ttf */,
+				D31100B02A6D2CA60055AFE9 /* DMSans_18pt-Medium.ttf */,
+				D31100B12A6D2CA60055AFE9 /* DMSans-Light.ttf */,
+				D31100B22A6D2CA60055AFE9 /* DMSans_36pt-BoldItalic.ttf */,
+				D31100B32A6D2CA60055AFE9 /* DMSans_24pt-Regular.ttf */,
+				D31100B42A6D2CA60055AFE9 /* DMSans_36pt-BlackItalic.ttf */,
+				D31100B52A6D2CA60055AFE9 /* DMSans-ExtraLightItalic.ttf */,
+				D31100B62A6D2CA60055AFE9 /* DMSans_36pt-ExtraBoldItalic.ttf */,
+				D31100B72A6D2CA60055AFE9 /* DMSans-ThinItalic.ttf */,
+				D31100B82A6D2CA60055AFE9 /* DMSans_36pt-Medium.ttf */,
+				D31100B92A6D2CA60055AFE9 /* DMSans-ExtraLight.ttf */,
+				D31100BA2A6D2CA60055AFE9 /* DMSans_24pt-Medium.ttf */,
+				D31100BB2A6D2CA60055AFE9 /* DMSans_18pt-BlackItalic.ttf */,
+				D31100BC2A6D2CA60055AFE9 /* DMSans_36pt-Thin.ttf */,
+				D31100BD2A6D2CA60055AFE9 /* DMSans_18pt-Bold.ttf */,
+				D31100BE2A6D2CA60055AFE9 /* DMSans_36pt-LightItalic.ttf */,
+				D31100BF2A6D2CA60055AFE9 /* DMSans-BoldItalic.ttf */,
+				D31100C02A6D2CA60055AFE9 /* DMSans_36pt-SemiBold.ttf */,
+				D31100C12A6D2CA60055AFE9 /* DMSans_18pt-Thin.ttf */,
+				D31100C22A6D2CA60055AFE9 /* DMSans_36pt-Bold.ttf */,
+				D31100C32A6D2CA60055AFE9 /* DMSans_24pt-ExtraBold.ttf */,
+				D31100C42A6D2CA60055AFE9 /* DMSans-SemiBold.ttf */,
+				D31100C52A6D2CA60055AFE9 /* DMSans_24pt-ExtraBoldItalic.ttf */,
+				D31100C62A6D2CA60055AFE9 /* DMSans_18pt-SemiBoldItalic.ttf */,
+				D31100C72A6D2CA60055AFE9 /* DMSans_24pt-SemiBold.ttf */,
+				D31100C82A6D2CA60055AFE9 /* DMSans_36pt-Light.ttf */,
+				D31100C92A6D2CA60055AFE9 /* DMSans_18pt-Light.ttf */,
+				D31100CA2A6D2CA60055AFE9 /* DMSans_24pt-Black.ttf */,
+				D31100CB2A6D2CA60055AFE9 /* DMSans_18pt-SemiBold.ttf */,
+				D31100CC2A6D2CA60055AFE9 /* DMSans_24pt-BoldItalic.ttf */,
+				D31100CD2A6D2CA60055AFE9 /* DMSans_24pt-BlackItalic.ttf */,
+				D31100CE2A6D2CA60055AFE9 /* DMSans_36pt-Italic.ttf */,
+				D31100CF2A6D2CA60055AFE9 /* DMSans_36pt-Black.ttf */,
+				D31100D02A6D2CA60055AFE9 /* DMSans_24pt-Bold.ttf */,
+				D31100D12A6D2CA60055AFE9 /* DMSans_24pt-Light.ttf */,
+				D31100D22A6D2CA60055AFE9 /* DMSans_24pt-ThinItalic.ttf */,
+				D31100D32A6D2CA60055AFE9 /* DMSans_18pt-Black.ttf */,
+				D31100D42A6D2CA60055AFE9 /* DMSans_24pt-Italic.ttf */,
+				D31100D52A6D2CA60055AFE9 /* DMSans_24pt-ExtraLight.ttf */,
+				D31100D62A6D2CA60055AFE9 /* DMSans-ExtraBold.ttf */,
+				D31100D72A6D2CA60055AFE9 /* DMSans_24pt-Thin.ttf */,
+				D31100D82A6D2CA60055AFE9 /* DMSans-BlackItalic.ttf */,
+				D31100D92A6D2CA60055AFE9 /* DMSans-MediumItalic.ttf */,
+				D31100DA2A6D2CA60055AFE9 /* DMSans_36pt-MediumItalic.ttf */,
+				D31100DB2A6D2CA60055AFE9 /* DMSans_36pt-Regular.ttf */,
+				D31100DC2A6D2CA60055AFE9 /* DMSans-LightItalic.ttf */,
+				D31100DD2A6D2CA60055AFE9 /* DMSans_18pt-Regular.ttf */,
+				D31100DE2A6D2CA60055AFE9 /* DMSans-Black.ttf */,
+				D31100DF2A6D2CA60055AFE9 /* DMSans-Italic.ttf */,
+				D31100E02A6D2CA60055AFE9 /* DMSans_18pt-MediumItalic.ttf */,
+				D31100E12A6D2CA60055AFE9 /* DMSans_36pt-ExtraBold.ttf */,
+				D31100E22A6D2CA60055AFE9 /* DMSans_24pt-ExtraLightItalic.ttf */,
+				D31100E32A6D2CA60055AFE9 /* DMSans_18pt-ExtraLightItalic.ttf */,
+				D31100E42A6D2CA60055AFE9 /* DMSans_24pt-LightItalic.ttf */,
+				D31100E52A6D2CA60055AFE9 /* DMSans_18pt-Italic.ttf */,
+				D31100E62A6D2CA60055AFE9 /* DMSans-ExtraBoldItalic.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		D311FF9B2A6D10AA0055AFE9 /* localizable */ = {
+			isa = PBXGroup;
+			children = (
+				D311FFA02A6D10F30055AFE9 /* Localizable.strings */,
+			);
+			path = localizable;
+			sourceTree = "<group>";
+		};
+		D311FFA52A6D15880055AFE9 /* constanse */ = {
+			isa = PBXGroup;
+			children = (
+				D311FFA62A6D16F50055AFE9 /* Strings+Generated.swift */,
+				D311FFAE2A6D1D110055AFE9 /* XCAssets+Generated.swift */,
+			);
+			path = constanse;
+			sourceTree = "<group>";
+		};
+		D311FFA82A6D17380055AFE9 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				D311FFA92A6D17650055AFE9 /* screens.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		D311FFAB2A6D17920055AFE9 /* Extensions + UICustoms */ = {
+			isa = PBXGroup;
+			children = (
+				D31100932A6D271D0055AFE9 /* Utilites.swift */,
+				D311FFA82A6D17380055AFE9 /* screens */,
+				D31101362A6D31830055AFE9 /* UITextField.swift */,
+			);
+			path = "Extensions + UICustoms";
+			sourceTree = "<group>";
+		};
+		D311FFB02A6D25620055AFE9 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				D311009C2A6D2CA60055AFE9 /* DM_Sans */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		F8CD9458921D37FB94A78E84 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				FDCDE4FD6872AEB8C3E40109 /* Pods-store.debug.xcconfig */,
 				B81120FF3E849F1C1A30B29D /* Pods-store.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -275,11 +582,12 @@
 			};
 			buildConfigurationList = D302067A2A6C2931004D3685 /* Build configuration list for PBXProject "store" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ar;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = D30206762A6C2931004D3685;
 			productRefGroup = D30206802A6C2931004D3685 /* Products */;
@@ -296,10 +604,87 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D30206B32A6C2BDF004D3685 /* boardingScreenViewController.xib in Resources */,
-				D302069F2A6C29D4004D3685 /* loginViewController.xib in Resources */,
+				D311012A2A6D2CA60055AFE9 /* DMSans-Black.ttf in Resources */,
+				D31100F72A6D2CA60055AFE9 /* DMSans_36pt-ExtraLight.ttf in Resources */,
+				D31101312A6D2CA60055AFE9 /* DMSans_18pt-Italic.ttf in Resources */,
+				D31100EF2A6D2CA60055AFE9 /* DMSans_18pt-ExtraBold.ttf in Resources */,
+				D31101322A6D2CA60055AFE9 /* DMSans-ExtraBoldItalic.ttf in Resources */,
+				D31101222A6D2CA60055AFE9 /* DMSans-ExtraBold.ttf in Resources */,
+				D31101052A6D2CA60055AFE9 /* DMSans-ExtraLight.ttf in Resources */,
+				D31101302A6D2CA60055AFE9 /* DMSans_24pt-LightItalic.ttf in Resources */,
+				D31100FE2A6D2CA60055AFE9 /* DMSans_36pt-BoldItalic.ttf in Resources */,
+				D31101012A6D2CA60055AFE9 /* DMSans-ExtraLightItalic.ttf in Resources */,
+				D311011D2A6D2CA60055AFE9 /* DMSans_24pt-Light.ttf in Resources */,
+				D31100EB2A6D2CA60055AFE9 /* DMSans_18pt-ExtraLight.ttf in Resources */,
+				D311FF9E2A6D10F30055AFE9 /* Localizable.strings in Resources */,
+				D31100F92A6D2CA60055AFE9 /* DMSans_18pt-LightItalic.ttf in Resources */,
+				D31101032A6D2CA60055AFE9 /* DMSans-ThinItalic.ttf in Resources */,
+				D311012D2A6D2CA60055AFE9 /* DMSans_36pt-ExtraBold.ttf in Resources */,
+				D31101102A6D2CA60055AFE9 /* DMSans-SemiBold.ttf in Resources */,
+				D31100F62A6D2CA60055AFE9 /* DMSans_18pt-ExtraBoldItalic.ttf in Resources */,
+				D311011A2A6D2CA60055AFE9 /* DMSans_36pt-Italic.ttf in Resources */,
+				D31100F32A6D2CA60055AFE9 /* DMSans-SemiBoldItalic.ttf in Resources */,
+				D31101352A6D2CA60055AFE9 /* DMSans-VariableFont_opsz,wght.ttf in Resources */,
+				D31101062A6D2CA60055AFE9 /* DMSans_24pt-Medium.ttf in Resources */,
+				D311010F2A6D2CA60055AFE9 /* DMSans_24pt-ExtraBold.ttf in Resources */,
+				D31101122A6D2CA60055AFE9 /* DMSans_18pt-SemiBoldItalic.ttf in Resources */,
+				D311010E2A6D2CA60055AFE9 /* DMSans_36pt-Bold.ttf in Resources */,
+				D31101232A6D2CA60055AFE9 /* DMSans_24pt-Thin.ttf in Resources */,
+				D31100952A6D2B250055AFE9 /* boardingScreenViewController.xib in Resources */,
+				D31100F02A6D2CA60055AFE9 /* DMSans_18pt-BoldItalic.ttf in Resources */,
+				D311011B2A6D2CA60055AFE9 /* DMSans_36pt-Black.ttf in Resources */,
+				D311011E2A6D2CA60055AFE9 /* DMSans_24pt-ThinItalic.ttf in Resources */,
+				D31101332A6D2CA60055AFE9 /* OFL.txt in Resources */,
+				D31101242A6D2CA60055AFE9 /* DMSans-BlackItalic.ttf in Resources */,
+				D311010B2A6D2CA60055AFE9 /* DMSans-BoldItalic.ttf in Resources */,
+				D31101192A6D2CA60055AFE9 /* DMSans_24pt-BlackItalic.ttf in Resources */,
+				D31100ED2A6D2CA60055AFE9 /* DMSans-Regular.ttf in Resources */,
+				D311012B2A6D2CA60055AFE9 /* DMSans-Italic.ttf in Resources */,
+				D31100FD2A6D2CA60055AFE9 /* DMSans-Light.ttf in Resources */,
+				D31100EA2A6D2CA60055AFE9 /* DMSans-Italic-VariableFont_opsz,wght.ttf in Resources */,
+				D31101112A6D2CA60055AFE9 /* DMSans_24pt-ExtraBoldItalic.ttf in Resources */,
+				D31101282A6D2CA60055AFE9 /* DMSans-LightItalic.ttf in Resources */,
+				D31101132A6D2CA60055AFE9 /* DMSans_24pt-SemiBold.ttf in Resources */,
+				D31101212A6D2CA60055AFE9 /* DMSans_24pt-ExtraLight.ttf in Resources */,
+				D31100F12A6D2CA60055AFE9 /* DMSans_36pt-SemiBoldItalic.ttf in Resources */,
+				D31100FB2A6D2CA60055AFE9 /* DMSans_36pt-ThinItalic.ttf in Resources */,
+				D311011F2A6D2CA60055AFE9 /* DMSans_18pt-Black.ttf in Resources */,
+				D31101162A6D2CA60055AFE9 /* DMSans_24pt-Black.ttf in Resources */,
+				D31100F52A6D2CA60055AFE9 /* DMSans-Bold.ttf in Resources */,
+				D311010A2A6D2CA60055AFE9 /* DMSans_36pt-LightItalic.ttf in Resources */,
+				D31101042A6D2CA60055AFE9 /* DMSans_36pt-Medium.ttf in Resources */,
+				D311012E2A6D2CA60055AFE9 /* DMSans_24pt-ExtraLightItalic.ttf in Resources */,
+				D31101172A6D2CA60055AFE9 /* DMSans_18pt-SemiBold.ttf in Resources */,
+				D31101092A6D2CA60055AFE9 /* DMSans_18pt-Bold.ttf in Resources */,
+				D31101022A6D2CA60055AFE9 /* DMSans_36pt-ExtraBoldItalic.ttf in Resources */,
+				D31101072A6D2CA60055AFE9 /* DMSans_18pt-BlackItalic.ttf in Resources */,
+				D31101202A6D2CA60055AFE9 /* DMSans_24pt-Italic.ttf in Resources */,
+				D31101342A6D2CA60055AFE9 /* README.txt in Resources */,
+				D31100EE2A6D2CA60055AFE9 /* DMSans-Medium.ttf in Resources */,
+				D31100F42A6D2CA60055AFE9 /* DMSans_36pt-ExtraLightItalic.ttf in Resources */,
+				D31101382A6D37BA0055AFE9 /* loginViewController.xib in Resources */,
+				D31101182A6D2CA60055AFE9 /* DMSans_24pt-BoldItalic.ttf in Resources */,
+				D311012F2A6D2CA60055AFE9 /* DMSans_18pt-ExtraLightItalic.ttf in Resources */,
+				D31101082A6D2CA60055AFE9 /* DMSans_36pt-Thin.ttf in Resources */,
+				D31101292A6D2CA60055AFE9 /* DMSans_18pt-Regular.ttf in Resources */,
+				D31100FF2A6D2CA60055AFE9 /* DMSans_24pt-Regular.ttf in Resources */,
 				D302068F2A6C2932004D3685 /* LaunchScreen.storyboard in Resources */,
+				D31101002A6D2CA60055AFE9 /* DMSans_36pt-BlackItalic.ttf in Resources */,
+				D31101272A6D2CA60055AFE9 /* DMSans_36pt-Regular.ttf in Resources */,
+				D311011C2A6D2CA60055AFE9 /* DMSans_24pt-Bold.ttf in Resources */,
+				D311010D2A6D2CA60055AFE9 /* DMSans_18pt-Thin.ttf in Resources */,
+				D31101142A6D2CA60055AFE9 /* DMSans_36pt-Light.ttf in Resources */,
+				D31100FC2A6D2CA60055AFE9 /* DMSans_18pt-Medium.ttf in Resources */,
+				D311010C2A6D2CA60055AFE9 /* DMSans_36pt-SemiBold.ttf in Resources */,
+				D31100EC2A6D2CA60055AFE9 /* DMSans_18pt-ThinItalic.ttf in Resources */,
+				D31101152A6D2CA60055AFE9 /* DMSans_18pt-Light.ttf in Resources */,
+				D31100F82A6D2CA60055AFE9 /* DMSans-Thin.ttf in Resources */,
+				D31100FA2A6D2CA60055AFE9 /* DMSans_24pt-SemiBoldItalic.ttf in Resources */,
 				D302068C2A6C2932004D3685 /* Assets.xcassets in Resources */,
+				D31101252A6D2CA60055AFE9 /* DMSans-MediumItalic.ttf in Resources */,
+				D31101262A6D2CA60055AFE9 /* DMSans_36pt-MediumItalic.ttf in Resources */,
+				D311012C2A6D2CA60055AFE9 /* DMSans_18pt-MediumItalic.ttf in Resources */,
+				D31100F22A6D2CA60055AFE9 /* DMSans_24pt-MediumItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,16 +737,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D311FFAF2A6D1D110055AFE9 /* XCAssets+Generated.swift in Sources */,
 				D30206A52A6C2A22004D3685 /* loginViewModel.swift in Sources */,
 				D30206AB2A6C2A61004D3685 /* BaseCoordinator.swift in Sources */,
 				D30206B22A6C2BDF004D3685 /* boardingScreenViewController.swift in Sources */,
 				D30206832A6C2931004D3685 /* AppDelegate.swift in Sources */,
 				D30206AA2A6C2A61004D3685 /* AppCoordinator.swift in Sources */,
+				D31100942A6D271D0055AFE9 /* Utilites.swift in Sources */,
 				D30206852A6C2931004D3685 /* SceneDelegate.swift in Sources */,
 				D30206B82A6C2C0A004D3685 /* boardingScreenCoordinator.swift in Sources */,
 				D302069E2A6C29D4004D3685 /* loginViewController.swift in Sources */,
 				D30206AE2A6C2A83004D3685 /* loginCoordinator.swift in Sources */,
+				D31101372A6D31830055AFE9 /* UITextField.swift in Sources */,
 				D30206AC2A6C2A61004D3685 /* Coordinator.swift in Sources */,
+				D311FFA72A6D16F50055AFE9 /* Strings+Generated.swift in Sources */,
+				D311FFAA2A6D17650055AFE9 /* screens.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,8 +762,38 @@
 			isa = PBXVariantGroup;
 			children = (
 				D302068E2A6C2932004D3685 /* Base */,
+				D311FFA32A6D11110055AFE9 /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D31100972A6D2B250055AFE9 /* boardingScreenViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D31100962A6D2B250055AFE9 /* Base */,
+				D31100992A6D2B2A0055AFE9 /* ar */,
+				D311009B2A6D2B2B0055AFE9 /* en */,
+			);
+			name = boardingScreenViewController.xib;
+			sourceTree = "<group>";
+		};
+		D311013A2A6D37BA0055AFE9 /* loginViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D31101392A6D37BA0055AFE9 /* Base */,
+				D311013C2A6D37BF0055AFE9 /* ar */,
+				D311013E2A6D37BF0055AFE9 /* en */,
+			);
+			name = loginViewController.xib;
+			sourceTree = "<group>";
+		};
+		D311FFA02A6D10F30055AFE9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D311FF9F2A6D10F30055AFE9 /* en */,
+				D311FFA22A6D110C0055AFE9 /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -383,6 +803,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -443,6 +864,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -508,6 +930,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -540,6 +963,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

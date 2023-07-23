@@ -15,8 +15,14 @@ class boardingScreenCoordinator: BaseCoordinator {
     }
     
     override func start() {
-        let viewController = boardingScreenViewController(nibName: "boardingScreenViewController", bundle: nil)
+        guard let viewController: boardingScreenViewController = declareViewController(screen: .boardingScreenViewController) else { return }
         viewController.coordinator = self
         navigationController.setViewControllers([viewController], animated: true)
+    }
+    
+    func goToLoginScreen() {
+        let coordinator = loginCoordinator(navigationController: navigationController)
+        add(coordinator: coordinator)
+        coordinator.start()
     }
 }

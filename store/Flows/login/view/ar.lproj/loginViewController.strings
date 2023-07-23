@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "Sign up"; ObjectID = "Dos-xa-nG4"; */
+"Dos-xa-nG4.normalTitle" = "انشئ حساب";
+
+/* Class = "UILabel"; text = "Username or Email"; ObjectID = "FJb-9q-9la"; */
+"FJb-9q-9la.text" = "اسم المستخدم او كلمة المرور";
+
+/* Class = "UILabel"; text = "Perth, Western Australia"; ObjectID = "GBS-md-MWV"; */
+"GBS-md-MWV.text" = "بيرث, غرب استراليا";
+
+/* Class = "UILabel"; text = " Password"; ObjectID = "L2d-th-jFN"; */
+"L2d-th-jFN.text" = " كلمة المرور";
+
+/* Class = "UILabel"; text = "Let’s Sign You In"; ObjectID = "SkW-gf-sKM"; */
+"SkW-gf-sKM.text" = "هيا سجل دخولك";
+
+/* Class = "UILabel"; text = "Welcome back, you’ve been missed!"; ObjectID = "eow-oE-jVT"; */
+"eow-oE-jVT.text" = "مرحباً من جديد نحن افتقدناك";
+
+/* Class = "UIButton"; normalTitle = "SIGN IN"; ObjectID = "oWC-oH-clB"; */
+"oWC-oH-clB.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UILabel"; text = "Don't have an account?"; ObjectID = "pzu-7C-80P"; */
+"pzu-7C-80P.text" = "اليس لديك حساب ؟";

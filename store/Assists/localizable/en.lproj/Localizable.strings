@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  store
+
+  Created by Mohamed Ali on 23/07/2023.
+  
+*/
+
+
+"userName" = "Username";
+"password" = "password";
