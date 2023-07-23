@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.7.1)
+  - IQKeyboardManagerSwift (6.5.12)
+  - ProgressHUD (13.6.2)
+  - SwiftGen (6.6.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManagerSwift
+  - ProgressHUD
+  - SwiftGen
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - ProgressHUD
+    - SwiftGen
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  IQKeyboardManagerSwift: 371b08cb39664fb56030f5345c815a4ffc74bbc0
+  ProgressHUD: 355915c8f033e626788fa9b0d99d06e8691595ab
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
+
+PODFILE CHECKSUM: 361ba5ec2fa1cb22cb067f7e0ab399eb931b06ac
+
+COCOAPODS: 1.12.1
