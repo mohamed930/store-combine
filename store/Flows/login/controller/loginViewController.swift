@@ -12,6 +12,7 @@ class loginViewController: UIViewController {
     
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     
     var loginviewmodel: loginViewModel!
     let padding: CGFloat = 40
@@ -24,6 +25,7 @@ class loginViewController: UIViewController {
         
         configureUI()
         bindToTextField()
+        subscribeToEnableButtonOrNot()
         subscribeToIsLoadingBehvaiour()
     }
     
@@ -40,7 +42,16 @@ class loginViewController: UIViewController {
     
     // MARK: - bind to CombineVariable.
     func bindToTextField() {
-        loginviewmodel.startRequest()
+        loginviewmodel.userNameSubject  = userNameTextField.textPublisher()
+        loginviewmodel.passwordSubject  = passwordTextField.textPublisher()
+    }
+    
+    func subscribeToEnableButtonOrNot() {
+        loginviewmodel.isButtonEnabled.sink(receiveValue: { [weak self] isEnabled in
+            guard let self = self else { return }
+            
+            loginButton.setButtonDisabled(isEnabled)
+        }).store(in: &cancallable)
     }
     
     // MARK: - subscribe to isLoading or not.
@@ -57,5 +68,4 @@ class loginViewController: UIViewController {
             
         }.store(in: &cancallable)
     }
-
 }

@@ -10,6 +10,8 @@ import Combine
 
 extension UITextField {
     
+    
+    
     fileprivate func setLeftPaddingPoints(_ amount:CGFloat){
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
         self.leftView = paddingView
@@ -30,10 +32,25 @@ extension UITextField {
                 attributes: [NSAttributedString.Key.foregroundColor: Color])
     }
     
-    func textPublisher() -> AnyPublisher<String, Never> {
-        NotificationCenter.default
+    func textPublisher() -> CurrentValueSubject<String, Never> {
+        let initialTextValue = "" // The initial value you want to use
+        let subject = CurrentValueSubject<String, Never>(initialTextValue)
+
+        _ = NotificationCenter.default
             .publisher(for: UITextField.textDidChangeNotification, object: self)
-            .map { ($0.object as? UITextField)?.text  ?? "" }
-            .eraseToAnyPublisher()
+            .compactMap { ($0.object as? UITextField)?.text }
+            .sink(receiveValue: { text in
+                subject.send(text)
+            })
+
+        return subject
     }
+    
+//    func textPublisher() -> AnyPublisher<String, Never> {
+//        NotificationCenter.default
+//            .publisher(for: UITextField.textDidChangeNotification, object: self)
+//            .map { ($0.object as? UITextField)?.text  ?? "" }
+//            .eraseToAnyPublisher()
+//        
+//    }
 }

@@ -103,6 +103,7 @@
 		D311FFA72A6D16F50055AFE9 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311FFA62A6D16F50055AFE9 /* Strings+Generated.swift */; };
 		D311FFAA2A6D17650055AFE9 /* screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311FFA92A6D17650055AFE9 /* screens.swift */; };
 		D311FFAF2A6D1D110055AFE9 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311FFAE2A6D1D110055AFE9 /* XCAssets+Generated.swift */; };
+		D3C242DB2A6ED49700E43092 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C242DA2A6ED49700E43092 /* UIButton.swift */; };
 		D3F423C02A6DB946001608A0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F423BF2A6DB946001608A0 /* UIViewController.swift */; };
 		E3C3652F4E94E0C3BD6C8E25 /* Pods_store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD482E126BE89391E124FA4 /* Pods_store.framework */; };
 /* End PBXBuildFile section */
@@ -214,6 +215,7 @@
 		D311FFA62A6D16F50055AFE9 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		D311FFA92A6D17650055AFE9 /* screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screens.swift; sourceTree = "<group>"; };
 		D311FFAE2A6D1D110055AFE9 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		D3C242DA2A6ED49700E43092 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		D3F423BF2A6DB946001608A0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		FDCDE4FD6872AEB8C3E40109 /* Pods-store.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-store.debug.xcconfig"; path = "Target Support Files/Pods-store/Pods-store.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -517,6 +519,7 @@
 				D311FFA82A6D17380055AFE9 /* screens */,
 				D31101362A6D31830055AFE9 /* UITextField.swift */,
 				D3F423BF2A6DB946001608A0 /* UIViewController.swift */,
+				D3C242DA2A6ED49700E43092 /* UIButton.swift */,
 			);
 			path = "Extensions + UICustoms";
 			sourceTree = "<group>";
@@ -550,7 +553,6 @@
 				D302067C2A6C2931004D3685 /* Frameworks */,
 				D302067D2A6C2931004D3685 /* Resources */,
 				2CF39108C868E96800300D5B /* [CP] Embed Pods Frameworks */,
-				D3F423C22A6DC05F001608A0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -726,23 +728,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3F423C22A6DC05F001608A0 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftgen >/dev/null; then\n    if [ -f \"${SRCROOT}/Pods/SwiftGen/bin/swiftgen\" ]; then\n        ${SRCROOT}/Pods/SwiftGen/bin/swiftgen\n    else\n        echo \"error: SwiftGen not found. Make sure you have installed it using CocoaPods.\"\n        exit 1\n    fi\nelse\n    echo \"error: SwiftGen not installed. You can install it using CocoaPods: pod 'SwiftGen', '~> 7.0'\"\n    exit 1\nfi\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -750,6 +735,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C242DB2A6ED49700E43092 /* UIButton.swift in Sources */,
 				D311FFAF2A6D1D110055AFE9 /* XCAssets+Generated.swift in Sources */,
 				D30206A52A6C2A22004D3685 /* loginViewModel.swift in Sources */,
 				D30206AB2A6C2A61004D3685 /* BaseCoordinator.swift in Sources */,

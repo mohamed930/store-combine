@@ -26,6 +26,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="loginViewController" customModule="store" customModuleProvider="target">
             <connections>
+                <outlet property="loginButton" destination="oWC-oH-clB" id="Lhg-7m-Nu8"/>
                 <outlet property="passwordTextField" destination="jnF-fO-fQO" id="Qzs-2G-unU"/>
                 <outlet property="userNameTextField" destination="11Q-Wk-neS" id="hQF-Yx-kb5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -230,16 +231,16 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="labelColor">
-            <color red="0.5607843137254902" green="0.5725490196078431" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.56099998950958252" green="0.57300001382827759" blue="0.63099998235702515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="line Color">
-            <color red="0.5607843137254902" green="0.5725490196078431" blue="0.63137254901960782" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.56099998950958252" green="0.57300001382827759" blue="0.63099998235702515" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="sub text">
-            <color red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.090000003576278687" green="0.090000003576278687" blue="0.090000003576278687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="yelloColor">
-            <color red="0.77647058823529413" green="0.6705882352941176" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77600002288818359" green="0.67100000381469727" blue="0.34900000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
