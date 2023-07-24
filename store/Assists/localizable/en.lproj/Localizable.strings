@@ -7,6 +7,8 @@
 */
 
 
-"userName" = "Username";
-"password" = "password";
-"pleaseWait" = "Please wait";
+"userName"               = "Email";
+"password"               = "password";
+"pleaseWait"             = "Please wait";
+"emailVerificationError" = "email isn't correct please try another one";
+"loginFailed"            = "email or password isn't correct";

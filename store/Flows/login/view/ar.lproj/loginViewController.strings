@@ -3,7 +3,7 @@
 "Dos-xa-nG4.normalTitle" = "انشئ حساب";
 
 /* Class = "UILabel"; text = "Username or Email"; ObjectID = "FJb-9q-9la"; */
-"FJb-9q-9la.text" = "اسم المستخدم او كلمة المرور";
+"FJb-9q-9la.text" = "البريد الالكتروني";
 
 /* Class = "UILabel"; text = "Perth, Western Australia"; ObjectID = "GBS-md-MWV"; */
 "GBS-md-MWV.text" = "بيرث, غرب استراليا";

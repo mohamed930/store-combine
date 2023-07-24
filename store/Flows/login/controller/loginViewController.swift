@@ -7,10 +7,13 @@
 
 import UIKit
 import Combine
+import ProgressHUD
 
 class loginViewController: UIViewController {
     
     @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var userNameLine:UIView!
+    @IBOutlet weak var userNameErrorMessageLabel:UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
@@ -25,8 +28,11 @@ class loginViewController: UIViewController {
         
         configureUI()
         bindToTextField()
+        bindToUserNameHasEndedType()
         subscribeToEnableButtonOrNot()
         subscribeToIsLoadingBehvaiour()
+        subscribeToEmailVerification()
+        subscribeToLoginResponse()
     }
     
     func configureUI() {
@@ -39,11 +45,35 @@ class loginViewController: UIViewController {
         passwordTextField.isSecureTextEntry = flag ? true : false
     }
     
+    @IBAction func loginButtonAction (_ sender: Any) {
+        passwordTextField.resignFirstResponder()
+        loginviewmodel.loginOperation()
+    }
+    
     
     // MARK: - bind to CombineVariable.
     func bindToTextField() {
-        loginviewmodel.userNameSubject  = userNameTextField.textPublisher()
-        loginviewmodel.passwordSubject  = passwordTextField.textPublisher()
+        userNameTextField.textPublisher().sink(receiveValue: { [weak self] userName in
+            guard let self = self else { return }
+            
+            loginviewmodel.userNameSubject.send(userName)
+        }).store(in: &cancallable)
+        
+        passwordTextField.textPublisher().sink(receiveValue: { [weak self] pass in
+            guard let self = self else { return }
+            
+            loginviewmodel.passwordSubject.send(pass)
+        }).store(in: &cancallable)
+    }
+    
+    func bindToUserNameHasEndedType() {
+        NotificationCenter.default.publisher(for: UITextField.textDidEndEditingNotification, object: userNameTextField)
+           .sink { [weak self] _ in
+               guard let self = self else { return }
+               
+               loginviewmodel.checkEmailValidation()
+           }
+           .store(in: &cancallable)
     }
     
     func subscribeToEnableButtonOrNot() {
@@ -67,5 +97,54 @@ class loginViewController: UIViewController {
             }
             
         }.store(in: &cancallable)
+    }
+    
+    func subscribeToEmailVerification() {
+        loginviewmodel.emailVerififcation.sink(receiveValue: { [weak self] isValied in
+            guard let self = self else { return }
+            
+            guard let isValied = isValied else { return }
+            
+            if isValied {
+                userNameLine.backgroundColor = images.greenColor.color
+                userNameErrorMessageLabel.visibility = .gone
+            }
+            else {
+                userNameLine.backgroundColor = images.errorMessages.color
+                userNameErrorMessageLabel.visibility = .visible
+                userNameErrorMessageLabel.text = myStrings.emailVerificationError
+            }
+            
+        }).store(in: &cancallable)
+    }
+    
+    func subscribeToLoginResponse() {
+        loginviewmodel.responseBehaviour.sink(receiveValue: { [weak self] isSuccess in
+            guard let self = self else { return }
+            
+            if isSuccess {
+                print("Sucess")
+            }
+            else {
+                ProgressHUD.showError(myStrings.loginFailed)
+                passwordTextField.text = ""
+                passwordTextField.becomeFirstResponder()
+            }
+            
+        }).store(in: &cancallable)
+    }
+}
+
+extension loginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userNameTextField {
+            passwordTextField.becomeFirstResponder()
+        }
+        else {
+            passwordTextField.resignFirstResponder()
+            loginviewmodel.loginOperation()
+        }
+        
+        return true
     }
 }

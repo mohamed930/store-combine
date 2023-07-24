@@ -12,15 +12,26 @@ class loginViewModel {
     var coordinator: loginCoordinator!
     
     // MARK: - Publishers variables.
-    var userNameSubject: CurrentValueSubject<String, Never>!
-    var passwordSubject: CurrentValueSubject<String, Never>!
+    var userNameSubject = CurrentValueSubject<String,Never>("")
+    var passwordSubject =  CurrentValueSubject<String,Never>("")
     var isloadingBehaviour = CurrentValueSubject<Bool,Never>(false)
+    var emailVerififcation = CurrentValueSubject<Bool?,Never>(nil)
+    
+    var responseBehaviour = PassthroughSubject<Bool,Never>()
+    
+    let userapi = usersAPI()
+    
+    var cancallable = Set<AnyCancellable>()
     
     // MARK: - validation.
     var userNameObservalbe: AnyPublisher<Bool,Never> {
         return userNameSubject.map { userName -> Bool in
-            let isEmpty = userName.trimmingCharacters(in: .whitespaces).isEmpty
-            return isEmpty
+            if userName.trimmingCharacters(in: .whitespaces).isEmpty {
+                return true
+            }
+            else {
+                return !userName.isValidEmail()
+            }
         }
         .eraseToAnyPublisher()
     }
@@ -46,5 +57,40 @@ class loginViewModel {
     func startRequest() {
         isloadingBehaviour.send(true)
     }
+    
+    func checkEmailValidation() {
+        emailVerififcation.send(userNameSubject.value.isValidEmail())
+    }
+    
+    
+    func loginOperation() {
+        isloadingBehaviour.send(true)
+        
+        let response = userapi.login(email: userNameSubject.value, password: passwordSubject.value, userPriviliage: .admin)
+        
+        response.sink(receiveCompletion: { [weak self] error in
+            guard let self = self else { return }
+            
+//            isloadingBehaviour.send(false)
+            responseBehaviour.send(false)
+            
+            print(error)
+        
+        }, receiveValue: { [weak self] response in
+            guard let self = self else { return }
+            
+            if response.isSuccess {
+                isloadingBehaviour.send(false)
+                guard let data = response.data else { return }
+                
+                responseBehaviour.send(true)
+            }
+            else {
+                print(response.error ?? "")
+                responseBehaviour.send(false)
+            }
+        }).store(in: &cancallable)
+    }
+    
     
 }
