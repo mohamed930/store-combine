@@ -29,6 +29,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="loginViewController" customModule="store" customModuleProvider="target">
             <connections>
+                <outlet property="locationLabel" destination="GBS-md-MWV" id="cCE-xZ-f4B"/>
                 <outlet property="loginButton" destination="oWC-oH-clB" id="Lhg-7m-Nu8"/>
                 <outlet property="passwordTextField" destination="jnF-fO-fQO" id="Qzs-2G-unU"/>
                 <outlet property="userNameErrorMessageLabel" destination="xb5-eK-pzB" id="Gwu-Ae-EqE"/>
@@ -236,6 +237,7 @@
                 <constraint firstItem="ffi-aM-gDR" firstAttribute="centerX" secondItem="oWC-oH-clB" secondAttribute="centerX" id="jOP-E9-Qu8"/>
                 <constraint firstItem="xb5-eK-pzB" firstAttribute="leading" secondItem="9rX-Zl-7Au" secondAttribute="leading" id="kSE-BY-Dzu"/>
                 <constraint firstItem="n5T-1w-HPR" firstAttribute="right" secondItem="oWC-oH-clB" secondAttribute="right" constant="-10" id="lhf-yf-SUp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GBS-md-MWV" secondAttribute="trailing" constant="10" id="mvz-v4-Qxw"/>
                 <constraint firstItem="kUT-bD-gvt" firstAttribute="top" secondItem="xb5-eK-pzB" secondAttribute="bottom" constant="30" id="nwE-jw-7eZ"/>
                 <constraint firstItem="9rX-Zl-7Au" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="ujH-XK-BzQ"/>
                 <constraint firstItem="SkW-gf-sKM" firstAttribute="leading" secondItem="OkL-iD-o3c" secondAttribute="leading" id="vSi-Hc-KXI"/>
@@ -257,7 +259,7 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="error messages">
-            <color red="1" green="0.0" blue="0.088987280062292839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.0" blue="0.089000001549720764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="labelColor">
             <color red="0.56099998950958252" green="0.57300001382827759" blue="0.63099998235702515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

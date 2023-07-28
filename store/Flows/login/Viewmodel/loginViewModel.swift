@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import CoreLocation
 
 class loginViewModel {
     var coordinator: loginCoordinator!
@@ -20,6 +21,7 @@ class loginViewModel {
     var responseBehaviour = PassthroughSubject<Bool,Never>()
     
     let userapi = usersAPI()
+    var locationManager: CLLocationManager!
     
     var cancallable = Set<AnyCancellable>()
     
@@ -71,11 +73,13 @@ class loginViewModel {
         response.sink(receiveCompletion: { [weak self] error in
             guard let self = self else { return }
             
-//            isloadingBehaviour.send(false)
-            responseBehaviour.send(false)
-            
-            print(error)
-        
+            switch error {
+            case .finished: break
+            case .failure(let err):
+                let e = err.userInfo[NSLocalizedDescriptionKey] as? String ?? ""
+                print(e)
+                responseBehaviour.send(false)
+            }
         }, receiveValue: { [weak self] response in
             guard let self = self else { return }
             
@@ -92,5 +96,12 @@ class loginViewModel {
         }).store(in: &cancallable)
     }
     
-    
+    func configureCoreLocation(ob: CLLocationManagerDelegate) {
+        locationManager = CLLocationManager()
+        locationManager.delegate = ob
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
+    }
 }

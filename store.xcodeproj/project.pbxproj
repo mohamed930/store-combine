@@ -114,6 +114,7 @@
 		D3A6CF942A6F06D500EBE530 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6CF932A6F06D500EBE530 /* Response.swift */; };
 		D3A6CF972A6F079800EBE530 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6CF962A6F079800EBE530 /* userModel.swift */; };
 		D3C242DB2A6ED49700E43092 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C242DA2A6ED49700E43092 /* UIButton.swift */; };
+		D3F064B22A744EB500E24598 /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F064B12A744EB500E24598 /* CLLocation.swift */; };
 		D3F423C02A6DB946001608A0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F423BF2A6DB946001608A0 /* UIViewController.swift */; };
 		E3C3652F4E94E0C3BD6C8E25 /* Pods_store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD482E126BE89391E124FA4 /* Pods_store.framework */; };
 /* End PBXBuildFile section */
@@ -236,6 +237,7 @@
 		D3A6CF932A6F06D500EBE530 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		D3A6CF962A6F079800EBE530 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
 		D3C242DA2A6ED49700E43092 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		D3F064B12A744EB500E24598 /* CLLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocation.swift; sourceTree = "<group>"; };
 		D3F423BF2A6DB946001608A0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		FDCDE4FD6872AEB8C3E40109 /* Pods-store.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-store.debug.xcconfig"; path = "Target Support Files/Pods-store/Pods-store.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -544,6 +546,7 @@
 				D3C242DA2A6ED49700E43092 /* UIButton.swift */,
 				D3A6CF792A6EF01700EBE530 /* String.swift */,
 				D3A6CF7B2A6EF1F200EBE530 /* UIView.swift */,
+				D3F064B12A744EB500E24598 /* CLLocation.swift */,
 			);
 			path = "Extensions + UICustoms";
 			sourceTree = "<group>";
@@ -834,6 +837,7 @@
 				D3C242DB2A6ED49700E43092 /* UIButton.swift in Sources */,
 				D311FFAF2A6D1D110055AFE9 /* XCAssets+Generated.swift in Sources */,
 				D3A6CF912A6F068D00EBE530 /* usersAPI.swift in Sources */,
+				D3F064B22A744EB500E24598 /* CLLocation.swift in Sources */,
 				D3A6CF892A6EFC8500EBE530 /* ErrorMessage.swift in Sources */,
 				D30206A52A6C2A22004D3685 /* loginViewModel.swift in Sources */,
 				D30206AB2A6C2A61004D3685 /* BaseCoordinator.swift in Sources */,
@@ -1032,6 +1036,8 @@
 				DEVELOPMENT_TEAM = X4YZSY77G5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = store/Assists/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "we need your location to know you are in couverage or not!";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "we need your location to know you are in couverage or not!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1065,6 +1071,8 @@
 				DEVELOPMENT_TEAM = X4YZSY77G5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = store/Assists/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "we need your location to know you are in couverage or not!";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "we need your location to know you are in couverage or not!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
