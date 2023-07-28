@@ -33,6 +33,8 @@ internal enum images {
   internal static let lineColor = ColorAsset(name: "line Color")
   internal static let subText = ColorAsset(name: "sub text")
   internal static let yelloColor = ColorAsset(name: "yelloColor")
+  internal static let icon1 = ImageAsset(name: "Icon-1")
+  internal static let icon = ImageAsset(name: "Icon")
   internal static let arrowLongRight = ImageAsset(name: "arrow-long-right")
   internal static let eye = ImageAsset(name: "eye")
   internal static let lock = ImageAsset(name: "lock")

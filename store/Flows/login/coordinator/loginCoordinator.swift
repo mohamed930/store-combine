@@ -21,4 +21,10 @@ class loginCoordinator: BaseCoordinator {
         viewController.loginviewmodel = viewmodel
         navigationController.setViewControllers([viewController], animated: true)
     }
+    
+    func goToSignup(locationAddress: String) {
+        let coordinator = signupCoordinator(navigationController: navigationController,locationAddress: locationAddress)
+        add(coordinator: coordinator)
+        coordinator.start()
+    }
 }

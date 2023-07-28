@@ -20,6 +20,8 @@ class loginViewModel {
     
     var responseBehaviour = PassthroughSubject<Bool,Never>()
     
+    var locationTitleBehaviour = CurrentValueSubject<String,Never>("")
+    
     let userapi = usersAPI()
     var locationManager: CLLocationManager!
     
@@ -54,6 +56,10 @@ class loginViewModel {
             return buttonEnabled
         }
         .eraseToAnyPublisher()
+    }
+    
+    func goToSignupScreenOperation() {
+        coordinator.goToSignup(locationAddress: locationTitleBehaviour.value)
     }
     
     func startRequest() {

@@ -195,6 +195,9 @@
                             <state key="normal" title="Sign up">
                                 <color key="titleColor" name="blackColor"/>
                             </state>
+                            <connections>
+                                <action selector="signupButtonAction:" destination="-1" eventType="touchUpInside" id="6pi-KI-DVf"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>

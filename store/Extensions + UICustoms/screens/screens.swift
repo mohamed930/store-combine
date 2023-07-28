@@ -10,4 +10,5 @@ import Foundation
 enum screens: String {
     case boardingScreenViewController
     case loginViewController
+    case signupViewController
 }

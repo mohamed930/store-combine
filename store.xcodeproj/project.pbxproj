@@ -115,6 +115,10 @@
 		D3A6CF972A6F079800EBE530 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6CF962A6F079800EBE530 /* userModel.swift */; };
 		D3C242DB2A6ED49700E43092 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C242DA2A6ED49700E43092 /* UIButton.swift */; };
 		D3F064B22A744EB500E24598 /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F064B12A744EB500E24598 /* CLLocation.swift */; };
+		D3F064BA2A745E8600E24598 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F064B82A745E8600E24598 /* signupViewController.swift */; };
+		D3F064BE2A745EAE00E24598 /* signupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F064BD2A745EAE00E24598 /* signupViewModel.swift */; };
+		D3F064C02A745ECF00E24598 /* signupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F064BF2A745ECF00E24598 /* signupCoordinator.swift */; };
+		D3F064C12A746F0D00E24598 /* signupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F064C32A746F0D00E24598 /* signupViewController.xib */; };
 		D3F423C02A6DB946001608A0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F423BF2A6DB946001608A0 /* UIViewController.swift */; };
 		E3C3652F4E94E0C3BD6C8E25 /* Pods_store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD482E126BE89391E124FA4 /* Pods_store.framework */; };
 /* End PBXBuildFile section */
@@ -238,6 +242,12 @@
 		D3A6CF962A6F079800EBE530 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
 		D3C242DA2A6ED49700E43092 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		D3F064B12A744EB500E24598 /* CLLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocation.swift; sourceTree = "<group>"; };
+		D3F064B82A745E8600E24598 /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
+		D3F064BD2A745EAE00E24598 /* signupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewModel.swift; sourceTree = "<group>"; };
+		D3F064BF2A745ECF00E24598 /* signupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupCoordinator.swift; sourceTree = "<group>"; };
+		D3F064C22A746F0D00E24598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/signupViewController.xib; sourceTree = "<group>"; };
+		D3F064C52A746F1100E24598 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/signupViewController.strings; sourceTree = "<group>"; };
+		D3F064C72A746F1100E24598 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/signupViewController.strings; sourceTree = "<group>"; };
 		D3F423BF2A6DB946001608A0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		FDCDE4FD6872AEB8C3E40109 /* Pods-store.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-store.debug.xcconfig"; path = "Target Support Files/Pods-store/Pods-store.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -310,6 +320,7 @@
 			children = (
 				D30206AF2A6C2BC4004D3685 /* Boarding Page */,
 				D302069A2A6C29B2004D3685 /* login */,
+				D3F064B32A745E5600E24598 /* signup */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -613,6 +624,49 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		D3F064B32A745E5600E24598 /* signup */ = {
+			isa = PBXGroup;
+			children = (
+				D3F064B72A745E7300E24598 /* coordinator */,
+				D3F064B62A745E6F00E24598 /* viewmodel */,
+				D3F064B52A745E6A00E24598 /* controller */,
+				D3F064B42A745E6600E24598 /* view */,
+			);
+			path = signup;
+			sourceTree = "<group>";
+		};
+		D3F064B42A745E6600E24598 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D3F064C32A746F0D00E24598 /* signupViewController.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D3F064B52A745E6A00E24598 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3F064B82A745E8600E24598 /* signupViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		D3F064B62A745E6F00E24598 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				D3F064BD2A745EAE00E24598 /* signupViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		D3F064B72A745E7300E24598 /* coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				D3F064BF2A745ECF00E24598 /* signupCoordinator.swift */,
+			);
+			path = coordinator;
+			sourceTree = "<group>";
+		};
 		F8CD9458921D37FB94A78E84 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -726,6 +780,7 @@
 				D31101282A6D2CA60055AFE9 /* DMSans-LightItalic.ttf in Resources */,
 				D31101132A6D2CA60055AFE9 /* DMSans_24pt-SemiBold.ttf in Resources */,
 				D31101212A6D2CA60055AFE9 /* DMSans_24pt-ExtraLight.ttf in Resources */,
+				D3F064C12A746F0D00E24598 /* signupViewController.xib in Resources */,
 				D31100F12A6D2CA60055AFE9 /* DMSans_36pt-SemiBoldItalic.ttf in Resources */,
 				D31100FB2A6D2CA60055AFE9 /* DMSans_36pt-ThinItalic.ttf in Resources */,
 				D311011F2A6D2CA60055AFE9 /* DMSans_18pt-Black.ttf in Resources */,
@@ -838,9 +893,11 @@
 				D311FFAF2A6D1D110055AFE9 /* XCAssets+Generated.swift in Sources */,
 				D3A6CF912A6F068D00EBE530 /* usersAPI.swift in Sources */,
 				D3F064B22A744EB500E24598 /* CLLocation.swift in Sources */,
+				D3F064BA2A745E8600E24598 /* signupViewController.swift in Sources */,
 				D3A6CF892A6EFC8500EBE530 /* ErrorMessage.swift in Sources */,
 				D30206A52A6C2A22004D3685 /* loginViewModel.swift in Sources */,
 				D30206AB2A6C2A61004D3685 /* BaseCoordinator.swift in Sources */,
+				D3F064BE2A745EAE00E24598 /* signupViewModel.swift in Sources */,
 				D30206B22A6C2BDF004D3685 /* boardingScreenViewController.swift in Sources */,
 				D3A6CF832A6EFBB600EBE530 /* TargetType.swift in Sources */,
 				D3A6CF852A6EFBE700EBE530 /* BaseAPI.swift in Sources */,
@@ -857,6 +914,7 @@
 				D3A6CF7C2A6EF1F200EBE530 /* UIView.swift in Sources */,
 				D31101372A6D31830055AFE9 /* UITextField.swift in Sources */,
 				D3A6CF942A6F06D500EBE530 /* Response.swift in Sources */,
+				D3F064C02A745ECF00E24598 /* signupCoordinator.swift in Sources */,
 				D30206AC2A6C2A61004D3685 /* Coordinator.swift in Sources */,
 				D311FFA72A6D16F50055AFE9 /* Strings+Generated.swift in Sources */,
 				D3F423C02A6DB946001608A0 /* UIViewController.swift in Sources */,
@@ -904,6 +962,16 @@
 				D311FFA22A6D110C0055AFE9 /* ar */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D3F064C32A746F0D00E24598 /* signupViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3F064C22A746F0D00E24598 /* Base */,
+				D3F064C52A746F1100E24598 /* ar */,
+				D3F064C72A746F1100E24598 /* en */,
+			);
+			name = signupViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

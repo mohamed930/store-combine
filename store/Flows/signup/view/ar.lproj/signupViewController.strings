@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "Term & Conditions"; ObjectID = "1TH-ox-TEz"; */
+"1TH-ox-TEz.text" = "الشروط والاحكام";
+
+/* Class = "UILabel"; text = "email isn't correct please try another one"; ObjectID = "1bo-Uy-wuC"; */
+"1bo-Uy-wuC.text" = "البريد الاكلتروني غير صالح من فضلك اختر بريد اخر";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "97g-Lc-g0C"; */
+"97g-Lc-g0C.text" = "البريد الالكتروني";
+
+/* Class = "UILabel"; text = "Already have an account?"; ObjectID = "D9F-9p-QeU"; */
+"D9F-9p-QeU.text" = "هل لديك بالفعل حساب؟";
+
+/* Class = "UILabel"; text = "By creating an account, you agree to our"; ObjectID = "Ei7-Ah-U9k"; */
+"Ei7-Ah-U9k.text" = "بإنشاك حساب, فأنت موافق علي";
+
+/* Class = "UILabel"; text = "Create an account to continue!"; ObjectID = "Gzs-UC-fjz"; */
+"Gzs-UC-fjz.text" = "انشئ حساب لاستكمال التسوق";
+
+/* Class = "UILabel"; text = " Password"; ObjectID = "IrN-nX-ojZ"; */
+"IrN-nX-ojZ.text" = " كلمة المرور";
+
+/* Class = "UIButton"; normalTitle = "Sign in"; ObjectID = "Tnf-MN-fSN"; */
+"Tnf-MN-fSN.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UILabel"; text = "Confirm password"; ObjectID = "UhC-Xq-ZF3"; */
+"UhC-Xq-ZF3.text" = "تأكيد كلمة المرور";
+
+/* Class = "UILabel"; text = "Getting Started"; ObjectID = "Uiu-Me-jUH"; */
+"Uiu-Me-jUH.text" = "لنبدأ";
+
+/* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "mdP-eV-mBt"; */
+"mdP-eV-mBt.normalTitle" = "انشاء الحساب";
+
+/* Class = "UILabel"; text = "Perth, Western Australia"; ObjectID = "u9a-T5-x7b"; */
+"u9a-T5-x7b.text" = "بيرث,غرب استرليا";

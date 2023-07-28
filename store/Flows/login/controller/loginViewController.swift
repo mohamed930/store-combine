@@ -64,6 +64,10 @@ class loginViewController: UIViewController {
         loginviewmodel.loginOperation()
     }
     
+    @IBAction func signupButtonAction(_ sender: Any) {
+        loginviewmodel.goToSignupScreenOperation()
+    }
+    
     
     // MARK: - bind to CombineVariable.
     func bindToTextField() {
@@ -201,7 +205,8 @@ extension loginViewController: CLLocationManagerDelegate {
                     return
                 }
                 
-                locationLabel.text = "\(placemark.streetNumber ?? "")\(placemark.streetName ?? ""),\(placemark.city ?? ""),\(placemark.county ?? "")"
+                locationLabel.text = "\(placemark.streetNumber ?? "")\(placemark.streetName ?? ""),\(placemark.neighborhood ?? ""),\(placemark.county ?? "")"
+                loginviewmodel.locationTitleBehaviour.send(locationLabel.text ?? myStrings.locationError)
             }
             
             loginviewmodel.locationManager.stopUpdatingLocation()

@@ -9,6 +9,7 @@
 
 "userName"               = "Email";
 "password"               = "password";
+"confirmPassword"        = "Confirm Password";
 "pleaseWait"             = "Please wait";
 "emailVerificationError" = "email isn't correct please try another one";
 "loginFailed"            = "email or password isn't correct";

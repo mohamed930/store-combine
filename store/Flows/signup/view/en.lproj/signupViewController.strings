@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "Term & Conditions"; ObjectID = "1TH-ox-TEz"; */
+"1TH-ox-TEz.text" = "Term & Conditions";
+
+/* Class = "UILabel"; text = "email isn't correct please try another one"; ObjectID = "1bo-Uy-wuC"; */
+"1bo-Uy-wuC.text" = "email isn't correct please try another one";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "97g-Lc-g0C"; */
+"97g-Lc-g0C.text" = "Email";
+
+/* Class = "UILabel"; text = "Already have an account?"; ObjectID = "D9F-9p-QeU"; */
+"D9F-9p-QeU.text" = "Already have an account?";
+
+/* Class = "UILabel"; text = "By creating an account, you agree to our"; ObjectID = "Ei7-Ah-U9k"; */
+"Ei7-Ah-U9k.text" = "By creating an account, you agree to our";
+
+/* Class = "UILabel"; text = "Create an account to continue!"; ObjectID = "Gzs-UC-fjz"; */
+"Gzs-UC-fjz.text" = "Create an account to continue!";
+
+/* Class = "UILabel"; text = " Password"; ObjectID = "IrN-nX-ojZ"; */
+"IrN-nX-ojZ.text" = " Password";
+
+/* Class = "UIButton"; normalTitle = "Sign in"; ObjectID = "Tnf-MN-fSN"; */
+"Tnf-MN-fSN.normalTitle" = "Sign in";
+
+/* Class = "UILabel"; text = "Confirm password"; ObjectID = "UhC-Xq-ZF3"; */
+"UhC-Xq-ZF3.text" = "Confirm password";
+
+/* Class = "UILabel"; text = "Getting Started"; ObjectID = "Uiu-Me-jUH"; */
+"Uiu-Me-jUH.text" = "Getting Started";
+
+/* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "mdP-eV-mBt"; */
+"mdP-eV-mBt.normalTitle" = "SIGN UP";
+
+/* Class = "UILabel"; text = "Perth, Western Australia"; ObjectID = "u9a-T5-x7b"; */
+"u9a-T5-x7b.text" = "Perth, Western Australia";

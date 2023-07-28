@@ -12,6 +12,8 @@ import Foundation
 internal enum myStrings {
   /// الغاء الامر
   internal static let cancel = myStrings.tr("Localizable", "cancel", fallback: "الغاء الامر")
+  /// تأكيد كلمة المرور
+  internal static let confirmPassword = myStrings.tr("Localizable", "confirmPassword", fallback: "تأكيد كلمة المرور")
   /// هذا البريد الاكتروني غير صالح من فضلك اعد المحاوله مره اخرى
   internal static let emailVerificationError = myStrings.tr("Localizable", "emailVerificationError", fallback: "هذا البريد الاكتروني غير صالح من فضلك اعد المحاوله مره اخرى")
   /// انتبه
